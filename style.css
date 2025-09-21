@@ -253,38 +253,38 @@ h4.checklist-subheader {
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(45deg, #00695C, #00897B); /* Gradient background */
+    background: #00B900; /* LINE Green */
     color: #fff;
     border: none;
     border-radius: 50px;
-    padding: 1.2em 4em; /* Larger padding */
+    padding: 1.2em 4em;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.3rem; /* Larger font */
+    font-size: 1.3rem;
     margin-top: 1.5em;
-    box-shadow: 0 4px 20px rgba(0, 105, 92, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 185, 0, 0.4); /* Green shadow */
     transition: all 0.3s ease;
-    animation: pulse 2s infinite; /* Pulse animation */
+    animation: pulse 2s infinite;
 }
 
 .cta-button:hover {
-    transform: translateY(-5px) scale(1.05); /* Enhanced hover effect */
-    box-shadow: 0 10px 30px rgba(0, 105, 92, 0.5);
-    animation-play-state: paused; /* Pause animation on hover */
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 185, 0, 0.5); /* Green shadow */
+    animation-play-state: paused;
 }
 
 @keyframes pulse {
     0% {
         transform: scale(1);
-        box-shadow: 0 4px 20px rgba(0, 105, 92, 0.4);
+        box-shadow: 0 4px 20px rgba(0, 185, 0, 0.4);
     }
     50% {
         transform: scale(1.03);
-        box-shadow: 0 8px 25px rgba(0, 105, 92, 0.5);
+        box-shadow: 0 8px 25px rgba(0, 185, 0, 0.5);
     }
     100% {
         transform: scale(1);
-        box-shadow: 0 4px 20px rgba(0, 105, 92, 0.4);
+        box-shadow: 0 4px 20px rgba(0, 185, 0, 0.4);
     }
 }
 
