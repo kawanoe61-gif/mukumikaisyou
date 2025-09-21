@@ -253,21 +253,39 @@ h4.checklist-subheader {
 
 .cta-button {
     display: inline-block;
-    background-color: #fff;
-    color: #004D40;
+    background: linear-gradient(45deg, #00695C, #00897B); /* Gradient background */
+    color: #fff;
+    border: none;
     border-radius: 50px;
-    padding: 1em 3.5em;
+    padding: 1.2em 4em; /* Larger padding */
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.3rem; /* Larger font */
     margin-top: 1.5em;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 20px rgba(0, 105, 92, 0.4);
     transition: all 0.3s ease;
+    animation: pulse 2s infinite; /* Pulse animation */
 }
 
 .cta-button:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    transform: translateY(-5px) scale(1.05); /* Enhanced hover effect */
+    box-shadow: 0 10px 30px rgba(0, 105, 92, 0.5);
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 20px rgba(0, 105, 92, 0.4);
+    }
+    50% {
+        transform: scale(1.03);
+        box-shadow: 0 8px 25px rgba(0, 105, 92, 0.5);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 20px rgba(0, 105, 92, 0.4);
+    }
 }
 
 /* 7. Footer */
