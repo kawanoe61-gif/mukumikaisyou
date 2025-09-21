@@ -8,76 +8,135 @@
 </head>
 <body>
     <header>
-        <h1>溜め込まない、巡るカラダへ。</h1>
-        <p>大人のための浮腫み解消レッスン</p>
+        <div class="image-placeholder">
+            <p>ここに画像が入ります</p>
+        </div>
+        <div class="header-text">
+            <h1>溜め込まない、巡るカラダへ。</h1>
+            <p>大人のための浮腫み解消レッスン</p>
+            <p class="special-thanks">★ LINEお友達追加 特典コンテンツ ★</p>
+        </div>
     </header>
 
     <main>
         
 
-        <section id="skincare-video">
-            <h2>お風呂上がりの3分スキンケア動画</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <main>
+
+        <section id="step1-check">
+            <h2 class="step-heading"><span>STEP 1</span>【知る】自分のむくみタイプをチェック</h2>
+            
+            <div id="causes-checklist">
+                <p class="checklist-description">当てはまる項目にチェックを入れて、ご自身の生活習慣を振り返ってみましょう。</p>
+                <form id="checklist-form">
+                    <div class="checklist-item"><input type="checkbox" id="cause1" name="causes"><label for="cause1">座りっぱなし・立ちっぱなし（デスクワーク・家事・買い物）で、ふくらはぎを動かす機会が少ない</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="cause2" name="causes"><label for="cause2">運動不足、または下半身の筋力が落ちてきたと感じる</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="cause3" name="causes"><label for="cause3">外食、惣菜、パン、汁物などで塩分を摂りすぎていると感じる</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="cause4" name="causes"><label for="cause4">晩酌や外食でアルコールを飲む習慣がある</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="cause5" name="causes"><label for="cause5">水分補給がコーヒーやお茶中心で、水をあまり飲んでいない</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="cause6" name="causes"><label for="cause6">PMSや月経前など、ホルモンバランスの乱れを感じる時期がある</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="cause7" name="causes"><label for="cause7">睡眠不足やストレスで、心身の緊張が続いている</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="cause8" name="causes"><label for="cause8">ガードルやスキニーパンツ、ヒールなど、体を締め付ける服装をよくする</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="cause9" name="causes"><label for="cause9">車、電車、飛行機など、長時間同じ姿勢で移動することが多い</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="cause10" name="causes"><label for="cause10">イベントや旅行の後など、一時的に炭水化物の量が増えることがある</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="cause11" name="causes"><label for="cause11">朝食が軽かったり、食事全体のタンパク質が不足していると感じる</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="cause12" name="causes"><label for="cause12">年齢と共に、痩せにくさや体質の変化を感じている</label></div>
+                </form>
+                <p class="checklist-note">※お薬（例：一部の血圧薬・鎮痛剤など）が影響する場合もあります。ご心配な方は、かかりつけの医師にご相談ください。</p>
             </div>
-            <div class="points">
-                <h3>マッサージのポイント</h3>
-                <ul>
-                    <li>リンパの流れを意識して、優しく撫でるように行いましょう。</li>
-                    <li>肌を摩擦しないよう、オイルやクリームをたっぷり使いましょう。</li>
-                    <li>「痛気持ちいい」くらいの力加減が最適です。</li>
-                </ul>
+
+            <div id="ng-checklist">
+                <h3 class="step-subheader">ついやってない？むくみを招くNG行動リスト</h3>
+                <form id="ng-checklist-form">
+                    <h4 class="checklist-subheader">【姿勢・運動】</h4>
+                    <div class="checklist-item"><input type="checkbox" id="ng1" name="ng-causes"><label for="ng1">1時間以上、座りっぱなし・立ちっぱなしでいる</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="ng2" name="ng-causes"><label for="ng2">脚を組んだり、膝の裏を圧迫する座り方をする</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="ng3" name="ng-causes"><label for="ng3">ほとんど運動しない日が週に何日かある</label></div>
+                    <h4 class="checklist-subheader">【生活習慣】</h4>
+                    <div class="checklist-item"><input type="checkbox" id="ng4" name="ng-causes"><label for="ng4">トイレが気になり、水分を摂るのを我慢しがち</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="ng5" name="ng-causes"><label for="ng5">睡眠不足、または寝る直前までスマホを見ている</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="ng6" name="ng-causes"><label for="ng6">体を締め付ける服や靴をよく身につける</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="ng7" name="ng-causes"><label for="ng7">湯船に浸からず、シャワーだけで済ませることが多い</label></div>
+                    <h4 class="checklist-subheader">【食事】</h4>
+                    <div class="checklist-item"><input type="checkbox" id="ng8" name="ng-causes"><label for="ng8">ラーメンのスープを飲み干すなど、塩分の多い食事をしがち</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="ng9" name="ng-causes"><label for="ng9">加工品（ハム・ベーコン等）や惣菜、ファストフードをよく食べる</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="ng10" name="ng-causes"><label for="ng10">お酒と一緒に、味の濃いおつまみを食べてしまう</label></div>
+                    <div class="checklist-item"><input type="checkbox" id="ng11" name="ng-causes"><label for="ng11">ジュースやスポーツドリンクなど、甘い飲み物をよく飲む</label></div>
+                </form>
             </div>
         </section>
 
-        <section id="food-list">
-            <h2>内側から整える。積極的に摂りたい食材リスト</h2>
-            <div class="food-category">
-                <h3>カリウムが豊富な食材</h3>
-                <p>体内の余分な塩分を排出するのを助けます。</p>
-                <ul class="item-list">
-                    <li>アボカド</li>
-                    <li>ほうれん草</li>
-                    <li>バナナ</li>
-                    <li>納豆</li>
-                </ul>
-            </div>
-            <div class="food-category">
-                <h3>ビタミンEが豊富な食材</h3>
-                <p>血行を促進し、細胞の健康を保ちます。</p>
-                <ul class="item-list">
-                    <li>アーモンド</li>
-                    <li>かぼちゃ</li>
-                    <li>うなぎ</li>
-                    <li>アボカド</li>
-                </ul>
-            </div>
-            <div class="food-category">
-                <h3>ポリフェノールが豊富な食材</h3>
-                <p>抗酸化作用で、若々しい体をサポートします。</p>
-                <ul class="item-list">
-                    <li>ブルーベリー</li>
-                    <li>緑茶</li>
-                    <li>カカオ</li>
-                    <li>赤ワイン</li>
-                </ul>
+        <section id="step2-food">
+            <h2 class="step-heading"><span>STEP 2</span>【整える】食事で内側からアプローチ</h2>
+            <div id="food-list">
+                <div class="food-category-flex">
+                    <img src="@k.jpg" alt="カリウムが豊富な食材" class="food-image">
+                    <div class="food-text">
+                        <h3>① カリウムが豊富</h3><p class="food-effect">効果: 体内の余分な塩分を排出するのを助けます。</p>
+                        <ul class="item-list"><li>ほうれん草</li><li>アボカド</li><li>トマト</li><li>バナナ</li><li>納豆</li><li>じゃがいも</li></ul>
+                    </div>
+                </div>
+                <div class="food-category-flex">
+                    <img src="@mg.jpg" alt="マグネシウムが豊富な食材" class="food-image">
+                    <div class="food-text">
+                        <h3>② マグネシウムが豊富</h3><p class="food-effect">効果: 体液のバランスを調整し、むくみを予防します。</p>
+                        <ul class="item-list"><li>豆腐</li><li>納豆</li><li>玄米</li><li>アーモンド</li><li>わかめ</li></ul>
+                    </div>
+                </div>
+                <div class="food-category-flex">
+                    <img src="@P.jpg" alt="良質なたんぱく質" class="food-image">
+                    <div class="food-text">
+                        <h3>③ 良質なたんぱく質</h3><p class="food-effect">効果: 血液の水分を保ち、巡りのための筋力を維持します。</p>
+                        <ul class="item-list"><li>鶏むね肉</li><li>鮭</li><li>さば</li><li>豆腐</li><li>ギリシャヨーグルト</li></ul>
+                    </div>
+                </div>
+                <div class="food-category-flex">
+                    <img src="@porifyeno-ru.jpg" alt="抗炎症・血流サポート" class="food-image">
+                    <div class="food-text">
+                        <h3>④ 抗炎症・血流サポート</h3><p class="food-effect">効果: 血流を促し、体の“重だるさ”を軽減します。</p>
+                        <ul class="item-list"><li>さば</li><li>トマト</li><li>ベリー類</li><li>生姜</li><li>緑茶</li></ul>
+                    </div>
+                </div>
+                <div class="food-category-flex">
+                    <img src="@miso.jpg" alt="水分と排泄を整える助っ人" class="food-image">
+                    <div class="food-text">
+                        <h3>⑤ 水分と排泄を整える助っ人</h3><p class="food-effect">効果: 巡りを促し、余分な水分を排出しやすくします。</p>
+                        <ul class="item-list"><li>水</li><li>具だくさん味噌汁</li><li>きゅうり</li><li>セロリ</li></ul>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="ng-actions">
-            <h2>知らないうちに、浮腫みスパイラル？NG行動リスト</h2>
-            <ul class="item-list">
-                <li>塩分の多い食事</li>
-                <li>長時間の同じ姿勢（デスクワークや立ち仕事）</li>
-                <li>体を冷やす服装や飲み物</li>
-                <li>締め付けの強い下着や衣類</li>
-                <li>睡眠不足</li>
-            </ul>
+        <section id="step3-care">
+            <h2 class="step-heading"><span>STEP 3</span>【流す】ご褒美セルフケア動画</h2>
+            <div id="skincare-video">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="points">
+                    <h3>マッサージのポイント</h3>
+                    <ul>
+                        <li>リンパの流れを意識して、優しく撫でるように行いましょう。</li>
+                        <li>肌を摩擦しないよう、オイルやクリームをたっぷり使いましょう。</li>
+                        <li>「痛気持ちいい」くらいの力加減が最適です。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    <section id="cta">
+            <h2>あなたのための「最後のダイエット」<br>を見つけませんか？</h2>
+            <p>「自分に合った方法が、もっと詳しく知りたい」<br>「今度こそ、本気で体質改善したい」</p>
+            <p>もしそう感じていただけたなら、ぜひ一度、個別面談でお話ししてみませんか？</p>
+            <p>あなたの体質やお悩みを丁寧にヒアリングし、目標達成までの最短ルートを一緒に見つけ出します。</p>
+            <a href="#" class="cta-button">個別面談の詳細・お申し込みはこちら</a>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Your Company Name</p>
     </footer>
+
+    <script src="main.js" defer></script>
 </body>
 </html>
