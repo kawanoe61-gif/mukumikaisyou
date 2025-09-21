@@ -1,20 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho:wght@700&display=swap');
 
-/* --- Modern & Clean Theme --- */
+/* --- Modern & Clean Theme - Final Polish --- */
 
 /* 1. General Body & Typography */
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    line-height: 1.8;
+    line-height: 1.9;
     color: #333;
-    background-color: #F4FAFA; /* Changed from #fff */
+    background-color: #F4FAFA;
     margin: 0;
     padding: 0;
+    font-size: 16px; /* Set a base font size for rem units */
+}
+
+p, .checklist-item label, .food-effect {
+    font-size: 1.05rem;
+    line-height: 2;
 }
 
 main {
     padding: 2em 1em;
-    max-width: 720px;
+    max-width: 740px; /* Slightly wider for more space */
     margin: 0 auto;
 }
 
@@ -32,33 +38,29 @@ header {
     text-align: center;
 }
 
-.image-placeholder {
-    background-color: #f0f0f0;
+.header-image {
     width: 100%;
     height: 280px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #999;
-    font-size: 1.2em;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .header-text {
-    padding: 3em 1em;
+    padding: 3em 1.5em;
 }
 
 header h1 {
-    font-size: 2.4em;
-    color: #004D40; /* Darker Teal */
+    font-size: 2.5em;
+    color: #004D40;
 }
 
 .special-thanks {
     display: inline-block;
-    background-color: #00695C; /* Main Accent */
+    background-color: #00695C;
     color: #fff;
-    border-radius: 50px; /* Pill shape */
+    border-radius: 50px;
     padding: 0.6em 2em;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: bold;
     letter-spacing: 0.05em;
     margin-top: 2em;
@@ -67,37 +69,34 @@ header h1 {
 
 /* 3. Main Content & Step Structure */
 main > section {
-    background-color: #fff; /* White card background */
-    padding: 2.5em;
+    background-color: #fff;
+    padding: 2.5em 2em;
     margin-top: 3em;
-    border-radius: 20px; /* Rounded corners for the card */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07); /* Soft shadow */
-    border-top: none; /* Remove the old border */
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
 }
 
 main > section:first-of-type {
     margin-top: 0;
-    padding-top: 2.5em; /* Keep padding consistent */
-    border-top: none; /* Ensure no border */
 }
 
 .step-heading {
-    font-size: 2.3em;
+    font-size: 2.6em;
     color: #00695C;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 1.8em;
 }
 
 .step-heading span {
     display: block;
     font-size: 0.7em;
     font-weight: bold;
-    letter-spacing: 0.2em; /* Wider spacing */
+    letter-spacing: 0.2em;
     margin-bottom: 0.5em;
 }
 
 .step-subheader {
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: #004D40;
     text-align: center;
     margin-top: 3.5em;
@@ -107,17 +106,17 @@ main > section:first-of-type {
 /* 4. Lists (Food & Checklists) */
 .food-category-flex {
     display: flex;
-    gap: 2em;
+    gap: 2.5em;
     align-items: center;
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 
 .food-image {
     flex: 1;
     height: 220px;
-    width: 100px; /* A base width for flexbox */
-    object-fit: cover; /* This prevents the image from being distorted */
-    border-radius: 12px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .food-text {
@@ -125,7 +124,7 @@ main > section:first-of-type {
 }
 
 .food-text h3 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: #004D40;
     margin-bottom: 0.5em;
 }
@@ -137,13 +136,13 @@ main > section:first-of-type {
 }
 
 .item-list li {
-    background: #F9F9F9; /* Light grey background */
+    background: #F9F9F9;
     border: none;
-    border-left: 4px solid #00695C; /* Accent border */
+    border-left: 4px solid #00695C;
     padding: 1em 1.5em;
     margin-bottom: 1em;
-    border-radius: 0 8px 8px 0; /* Sharp on the left, rounded on the right */
-    font-size: 1.1em;
+    border-radius: 0 8px 8px 0;
+    font-size: 1.1rem;
     box-shadow: none;
 }
 
@@ -151,7 +150,7 @@ main > section:first-of-type {
 .checklist-description, .checklist-note {
     text-align: center;
     color: #757575;
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
     max-width: 550px;
     margin-left: auto;
     margin-right: auto;
@@ -159,12 +158,14 @@ main > section:first-of-type {
 
 h4.checklist-subheader {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #004D40;
-    margin-top: 2.5em;
+    margin-top: 3em;
     margin-bottom: 1.5em;
     text-align: center;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #E0F2F1;
 }
 
 .checklist-item {
@@ -172,55 +173,72 @@ h4.checklist-subheader {
     align-items: center;
     background: #fff;
     border: 1px solid #e0e0e0;
-    padding: 1.2em 1.5em;
-    border-radius: 50px; /* Pill shape */
+    padding: 1.2em 1.8em;
+    border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 1em;
 }
 
 .checklist-item:has(input:checked) {
-    background-color: #E0F2F1; /* Light Accent */
+    background-color: #E0F2F1;
     border-color: #00695C;
 }
 
 .checklist-item input[type="checkbox"] {
-    margin-right: 1em;
+    margin-right: 1.2em;
     width: 1.3em;
     height: 1.3em;
     accent-color: #00695C;
 }
 
-.checklist-item label {
-    flex: 1;
-    cursor: pointer;
+/* 6. Video & CTA */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 85%; /* Not full width */
+    margin: 0 auto 2em auto; /* Centering the container */
+    background: #000;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* 6. Video & CTA */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 #step3-care .points {
     background: #F9F9F9;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
-    padding: 1.5em;
+    padding: 2em;
 }
 
 #step3-care .points h3 {
     color: #004D40;
     border-left: 4px solid #00695C;
     padding-left: 0.8em;
+    font-size: 1.3em;
 }
 
 #cta {
-    background-color: #004D40; /* Darker Teal background */
+    background-color: #004D40;
     color: #fff;
     padding: 5em 2em;
     text-align: center;
     margin-top: 4em;
-    border-radius: 20px; /* Rounded section */
+    border-radius: 24px;
 }
 
 #cta h2 {
-    font-size: 2.2em;
+    font-size: 2.6em;
     color: #fff;
     margin-bottom: 1em;
 }
@@ -229,7 +247,6 @@ h4.checklist-subheader {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    line-height: 2;
     margin-bottom: 1.5em;
     opacity: 0.9;
 }
@@ -242,7 +259,7 @@ h4.checklist-subheader {
     padding: 1em 3.5em;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-top: 1.5em;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
@@ -256,23 +273,20 @@ h4.checklist-subheader {
 /* 7. Footer */
 footer {
     text-align: center;
-    padding: 3em 1em;
-    background-color: #f9f9f9;
-    color: #999;
-    font-size: 0.9em;
+    padding: 4em 1em;
+    background-color: transparent; /* Make it blend with body */
+    color: #aaa;
+    font-size: 0.9rem;
     margin-top: 4em;
 }
 
 /* 8. Responsive */
 @media (max-width: 768px) {
-    .food-category-flex {
-        flex-direction: column;
-    }
-    .image-placeholder-small {
-        width: 100%;
-        height: 200px;
-    }
-    header h1 { font-size: 2em; }
-    .step-heading { font-size: 1.9em; }
-    #cta h2 { font-size: 1.8em; }
+    body { font-size: 15px; }
+    .food-category-flex { flex-direction: column; }
+    .image-placeholder-small { width: 100%; height: 200px; }
+    header h1 { font-size: 2.1em; }
+    .step-heading { font-size: 2.2em; }
+    #cta h2 { font-size: 2em; }
+    main > section { padding: 2em 1.5em; }
 }
